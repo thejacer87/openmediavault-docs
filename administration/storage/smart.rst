@@ -1,7 +1,7 @@
 SMART
 #####
 
-Modern hard disks drives (and SSD's) have firmware inside that reports several attributes (usually called S.M.A.R.T values) through sensors that are relevant to assest the device condition. Those values and what they mean are explained by `here <https://en.wikipedia.org/wiki/S.M.A.R.T.>`_. Not all drives report the same amount of attributes, but all of them report some common ones which are known to be the bests for assesing health [1]_.
+Modern hard disks drives (and SSD's) have firmware inside that reports several attributes (usually called S.M.A.R.T values) through sensors that are relevant to assess the device condition. Those values and what they mean are explained `here <https://en.wikipedia.org/wiki/S.M.A.R.T.>`_. Not all drives report the same amount of attributes, but all of them report some common ones which are known to be the bests for assesing health [1]_.
 
 There are several tools for accessing those attributes. |omv| reads and monitors hard drives smart values using smartmontools [2]_.
 
@@ -16,7 +16,7 @@ Temperature is a very critical attribute. Select the desired limits for smart mo
 
 Devices
 -------
-The grid displays all current block devices in the system with SMART capabilities. From this grid by selecting a drive you can configure if you want smartmontools to watch and inform for any SMART attributes changes during uptime using the edit button.
+The grid displays all current block devices in the system with SMART capabilities. By selecting a drive from the grid you can configure if you want smartmontools to watch and inform for any SMART attributes changes during uptime using the edit button.
 
 Smartmontools is configured in this file :file:`/etc/smartd.conf`.
 
