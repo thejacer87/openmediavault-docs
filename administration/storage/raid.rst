@@ -46,7 +46,7 @@ Mail notifications are integrated for mdadm, these are sent everytime an array e
 Growing
 -------
 
-Before growing array is better to clean the partition table of the new disk, specially if the disk was used before in another mdadm array, erase also the superblock::
+Before growing an array it's better to clean the partition table of the new disk, especially if the disk was used before in another mdadm array. Also, erase the superblock::
 
 $ mdadm --zero-superblock /dev/sdX
 
